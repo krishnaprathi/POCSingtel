@@ -18,7 +18,12 @@ public class Solution {
 		Animal myChicken =  new Chicken();
 		myChicken.sing();
 		myChicken.fly();
-	
+		Animal myRooster =  new Rooster();
+		myRooster.sing();
+		System.out.println("\n***************ROOSTER Will be extends to chicken except Sing behaviour : *************** \n");
+		System.out.println("\n*************** Modeled ROOSTER with Delegation Behaviour : ***************\n");
+		RoosterDelegation myRoosterDel =  new RoosterDelegation();
+		myRoosterDel.sing();
 	}
 
 }
