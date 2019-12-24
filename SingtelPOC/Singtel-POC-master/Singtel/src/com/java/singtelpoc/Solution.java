@@ -24,6 +24,22 @@ public class Solution {
 		System.out.println("\n*************** Modeled ROOSTER with Delegation Behaviour : ***************\n");
 		RoosterDelegation myRoosterDel =  new RoosterDelegation();
 		myRoosterDel.sing();
+		System.out.println("\n*************** PARROT LIVING WITH DOGS : ***************");
+		Parrot myParrotliveswithDogs =  new Parrot();
+		myParrotliveswithDogs.livingTogether(new Dog());
+		myParrotliveswithDogs.sing();
+		System.out.println("\n*************** PARROT LIVING WITH CATS : ***************");
+		Parrot myParrotliveswithCats =  new Parrot();
+		myParrotliveswithCats.livingTogether(new Cat());
+		myParrotliveswithCats.sing();
+		System.out.println("\n*************** PARROT LIVING WITH ROOSTERS : ***************");
+		Parrot myParrotliveswithRoosters =  new Parrot();
+		myParrotliveswithRoosters.livingTogether(new Rooster());
+		myParrotliveswithRoosters.sing();
+		System.out.println("\n*************** PARROT LIVING WITH DUCKS : ***************");
+		Parrot myParrotliveswithDucks =  new Parrot();
+		myParrotliveswithDucks.livingTogether(new Duck());
+		myParrotliveswithDucks.sing();
 	}
 
 }
