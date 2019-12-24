@@ -105,6 +105,36 @@ public class Solution {
 		    System.out.println("No.of Animals can sing: " + singCount);
 		    System.out.println("No.of Animals can swim: " + swimCount);
 		    
-	}
+		    Rooster myRstr = new Rooster();
+		    List<String> roosterSoundList = new ArrayList<String>(){/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1813501743629786784L;
+
+		{
+			    add("Default");
+		        add("Danish");
+		        add("Dutch");
+		        add("Finnish");
+		        add("French");
+		        add("German");
+		        add("Greek");
+		        add("Hebrew");
+		        add("Hungarian");
+		        add("Italian");
+		        add("Japanese");
+		        add("Portuguese");
+		        add("Russian");
+		        add("Swedish");
+		        add("Turkish");
+		        add("Urdu");
+			}}; 
+			
+			for (String lang : roosterSoundList) {
+				System.out.println("LANGUAGE:***"+lang+"***");
+				myRstr.sing(lang);
+			}
+		}
+
 
 }
