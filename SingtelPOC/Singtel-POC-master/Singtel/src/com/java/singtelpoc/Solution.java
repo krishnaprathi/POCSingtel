@@ -71,6 +71,40 @@ public class Solution {
 	    Butterfly myCaterpillar =  new Butterfly();
 	    myCaterpillar.setCaterpiller(true);
 	    myCaterpillar.walk();
+	    Animal[] animals = new Animal[]{
+				   new Bird(),
+				   new Duck(),
+				   new Chicken(),
+				   new Rooster(),
+				   new Parrot(),
+				   new Shark(),
+				   new Clownfish(),
+				   new Frog(),
+				   new Dog(),
+				   new Butterfly(),
+				   new Cat()
+				   };
+		    int flyCount = 0 ;
+		    int walkCount = 0 ;
+		    int singCount = 0 ;
+		    int swimCount = 0 ;
+		    for (Animal animal : animals) {
+		    	 System.out.println("\n*************** COUNT OF ANIMAL BEHAVIOUR ***************"); 
+			   if(animal.fly())
+				   flyCount++;
+			    if(animal.walk())
+			    	walkCount++;
+			    if(animal.sing())
+			    	singCount++;
+			    if(animal.swim())
+			    	swimCount++;
+		}
+		    System.out.println("\n*************** BEFORE COUNT ***************"); 
+		    System.out.println("No.of Animals can fly: " + flyCount);
+		    System.out.println("No.of Animals can walk: " + walkCount);
+		    System.out.println("No.of Animals can sing: " + singCount);
+		    System.out.println("No.of Animals can swim: " + swimCount);
+		    
 	}
 
 }
