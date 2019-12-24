@@ -62,6 +62,15 @@ public class Solution {
 	    Dolphin dolphin = new Dolphin();
 	    dolphin.hasFishBehaviour(new Shark());
 	    dolphin.swim();
+	    System.out.println("\n*************** BUTTERFLY Behaviour : ***************");
+	    Butterfly myButterFly =  new Butterfly();
+	    myButterFly.setCaterpiller(false);
+	    myButterFly.fly();
+	    myButterFly.sing();
+	    System.out.println("\n*************** CATERPILLAR Behaviour : ***************"); 
+	    Butterfly myCaterpillar =  new Butterfly();
+	    myCaterpillar.setCaterpiller(true);
+	    myCaterpillar.walk();
 	}
 
 }
