@@ -40,6 +40,28 @@ public class Solution {
 		Parrot myParrotliveswithDucks =  new Parrot();
 		myParrotliveswithDucks.livingTogether(new Duck());
 		myParrotliveswithDucks.sing();
+		System.out.println("\n*************** FISH Implemented by SHARK: ***************");
+		Shark myShark = new Shark();
+		myShark.sing();
+		myShark.walk();
+		myShark.swim(); 
+		System.out.println("\n*************** FISH Implemented by CLOWNFISH: ***************");
+		Clownfish myClown = new Clownfish();
+		myClown.sing();
+		myClown.walk();
+		myClown.swim(); 
+		System.out.println("\n*************** SHARK / CLOWNFISH Behaviour : ***************");
+		System.out.println("*************** SHARK ***************");
+		myShark.sizeColour();
+		System.out.println("*************** CLOWNFISH ***************");
+		myClown.sizeColour();
+	    myClown.jokes();
+		System.out.println("*************** SHARK ***************");
+	    myShark.eat();
+	    System.out.println("\n*************** DOLPHIN Behaviour : ***************");
+	    Dolphin dolphin = new Dolphin();
+	    dolphin.hasFishBehaviour(new Shark());
+	    dolphin.swim();
 	}
 
 }
